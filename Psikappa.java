@@ -1,5 +1,5 @@
 public class Psikappa extends ArmaMago{
     public Psikappa(){
-        super("Psikappa", 0.5);
+        super("Psi-kappa", 0.5);
     }
 }
