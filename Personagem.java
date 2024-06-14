@@ -31,11 +31,11 @@ public abstract class Personagem{
             System.out.printf("Pare! O %s já está morto!\n", b.nomeTipo);
             return;
         }
-        if(this.forca > b.forca && this.destreza > b.destreza){
+        if(this.destreza > b.destreza){
             double dano = this.calculaDano();
             b.recebeDano(dano);
             System.out.printf("O ataque foi efetivo com %.1f pontos de dano!\n", dano);
-        }else if(this.forca < b.forca || this.destreza < b.destreza){
+        }else if(this.destreza < b.destreza){
             double dano = b.calculaDano();
             this.recebeDano(dano);
             System.out.printf("O ataque foi inefetivo e revidado com %.1f pontos de dano!\n", dano);
